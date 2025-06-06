@@ -52,6 +52,7 @@
 }
 
 #AboutView img{
+    width: 23vw;
     border-radius: 10px;
     transition: 0.2s;
 }
