@@ -25,7 +25,7 @@ function SetButton(btn){
 for(let i = 0; i < topbar.children.length; i++){
     var btn = topbar.children[i]
 
-    if(i == 0){
+    if(i == 2){
         prevBtn = btn
         ActiveBtn(btn)
     }
@@ -38,3 +38,17 @@ window.addEventListener('message', (event) => {
     ActiveBtn(topbar.children[event.data.sector], event.data.goto);
   }
 });
+
+function OnResize(){
+    container.style.width = (window.visualViewport.width  - 0) + "px"
+    container.style.height = ((window.visualViewport.height - topbar.clientHeight) - 5) + "px"
+}
+
+window.addEventListener('resize', OnResize)
+document.addEventListener("DOMContentLoaded", OnResize)
+
+document.addEventListener('touchmove', preventScroll, { passive: false });
+
+function preventScroll(e) {
+  e.preventDefault();
+}

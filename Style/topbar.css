@@ -52,6 +52,7 @@
     }
 
     #Topbar button{
-        font-size: 100%;
+        margin: 0px;
+        font-size: 5vw;
     }
 }
