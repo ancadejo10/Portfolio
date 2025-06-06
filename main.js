@@ -25,7 +25,7 @@ function SetButton(btn){
 for(let i = 0; i < topbar.children.length; i++){
     var btn = topbar.children[i]
 
-    if(i == 2){
+    if(i == 0){
         prevBtn = btn
         ActiveBtn(btn)
     }
