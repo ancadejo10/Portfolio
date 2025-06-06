@@ -1,0 +1,90 @@
+#AboutView{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#AboutView td{
+    transform: scale(0.9);
+
+    box-shadow: inset 0 0px 50px rgb(0, 0, 0);
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+
+    box-shadow: 
+        inset 5px 5px 15px rgba(0, 0, 0, 0.8),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1);
+
+    transition: 0.2s;
+}
+
+#AboutView .Sub{
+    box-shadow: none;
+    background-color: rgb(19, 19, 19);
+    border-radius: 10px;
+    color: white;
+
+    transform: scale(0.9);
+    padding: 0px;
+    text-align: center;
+}
+
+#AboutView .Sub:hover{
+    cursor: default;
+    box-shadow: none;
+    transform: scale(0.9);
+}
+
+#AboutView span{
+    display: flex;
+}
+
+#AboutView td:hover{
+    box-shadow: 0 0px 50px rgb(0, 0, 0);
+    background-color: rgb(89, 89, 89);
+
+    transform: scale(0.93);
+}
+
+#AboutView h1{
+    font-size: 5vh;
+    text-align: center;
+}
+
+#AboutView img{
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#AboutView div{
+    flex: 1;
+    margin-top: 3vh;
+    width: 40vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    font-size: 3vh;
+    font-family: "Playwrite IT Moderna", cursive;
+}
+
+#AboutView td, #AboutView{
+    padding: 2vw;
+}
+
+#AboutView a{
+    color: yellow;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    #AboutView td{
+        display: block;
+    }
+
+    #AboutView span{
+        display: block;
+    }
+
+    #AboutView img, #AboutView div{
+        width: 70vw;
+    }
+}

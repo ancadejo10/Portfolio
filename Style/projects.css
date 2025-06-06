@@ -1,0 +1,190 @@
+#ProjectsView{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ProjectsView td{
+    transform: scale(0.9);
+
+    box-shadow: inset 0 0px 50px rgb(0, 0, 0);
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+
+    box-shadow: 
+        inset 5px 5px 15px rgba(0, 0, 0, 0.8),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1);
+
+    transition: 0.2s;
+}
+
+#ProjectsView .Sub{
+    box-shadow: none;
+    background-color: rgb(19, 19, 19);
+    border-radius: 10px;
+    color: white;
+
+    transform: scale(0.9);
+    padding: 0px;
+    text-align: center;
+}
+
+#ProjectsView .Sub:hover{
+    cursor: default;
+    box-shadow: none;
+    transform: scale(0.9);
+}
+
+#ProjectsView span{
+    display: flex;
+}
+
+#ProjectsView td:hover{
+    box-shadow: 0 0px 50px rgb(0, 0, 0);
+    background-color: rgb(89, 89, 89);
+
+    transform: scale(0.93);
+}
+
+#ProjectsView h1{
+    font-size: 5vh;
+}
+
+#ProjectsView img{
+    height: 33vh;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#ProjectsView div{
+    flex: 1;
+    margin-top: 3vh;
+    width: 8vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    font-size: 3vh;
+}
+
+#ProjectsView td, #HeaderText{
+    padding: 2vw;
+}
+
+#ProjectsView a{
+    color: yellow;
+    text-decoration: none;
+}
+
+#VideoView{
+    display: none;
+    position: fixed;
+    width: 96vw;
+    height: 96vh;
+    background-color: rgb(20, 20, 20);
+    top: 2vh;
+    left: 2vw;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#VideoView video{
+    height: 80vh;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    width: 86vw;
+}
+
+#VideoView div{
+    color: white;
+
+    transform: scale(0.9);
+    padding: 0px;
+    font-size: 6vh;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3vw;
+
+    margin-top: 1vh;
+    margin-left: 38vw;
+    width: 20vw;
+
+    box-shadow: inset 0 0px 50px rgb(47, 47, 47);
+    background-color: rgb(22, 22, 22);
+    border-radius: 10px;
+
+    box-shadow: 
+        inset 5px 5px 15px rgba(0, 0, 0, 0.8),
+        inset -5px -5px 15px rgba(97, 97, 97, 0.1);
+
+    transition: 0.2s;
+
+    filter: blur(0px);
+}
+
+#VideoView div:hover{
+    box-shadow: 0 0px 50px rgb(0, 0, 0);
+    background-color: rgb(89, 89, 89);
+
+    transform: scale(0.93);
+}
+
+#ProjectsView{
+    transition: 0.2s;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@media (max-width: 600px) {
+    #ProjectsView td{
+        display: block;
+    }
+
+    #ProjectsView span{
+        display: block;
+    }
+
+    #ProjectsView img, #ProjectsView div{
+        height: 30vh;
+    }
+
+    #ProjectsView div{
+        width: auto;
+    }
+
+    #VideoView{
+        top: 18vh;
+        height: auto;
+        padding-bottom: 5vh;
+    }
+
+    #VideoView video{
+        margin-top: 5vh;
+        margin-left: 5vw;
+        width: 85vw;
+        height: auto
+    }
+
+    #VideoView div{
+        margin-top: 5vh;
+        margin-left: 5vw;
+        width: 80vw;
+        font-size: 8vh;
+    }
+}

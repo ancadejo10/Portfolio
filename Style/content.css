@@ -1,0 +1,98 @@
+#HeaderContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20,20,20);
+    margin: 2%;
+    border-radius: 10px;
+}
+
+#HeaderContainer img{
+    width: 5vw;
+    margin: 1vw;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#HeaderContainer img:hover{
+    transform: scale(1.2);
+}
+
+#HeaderText h1{
+    font-family: "Playwrite IT Moderna", cursive;
+    font-size: 5vw;
+    text-shadow: 0 0px 50px rgb(255, 0, 0);
+    color: rgb(255, 66, 45);
+}
+
+#HeaderText p{
+    font-family: "Port Lligat Sans", sans-serif;
+    font-size: 2vw;
+}
+
+#ContentView{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ContentView td{
+    transform: scale(0.9);
+
+    box-shadow: inset 0 0px 50px rgb(0, 0, 0);
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+
+    box-shadow: 
+        inset 5px 5px 15px rgba(0, 0, 0, 0.8),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1);
+
+    transition: 0.2s;
+}
+
+#ContentView td:hover{
+    box-shadow: 0 0px 50px rgb(0, 0, 0);
+    background-color: rgb(89, 89, 89);
+
+    transform: scale(0.93);
+}
+
+#ContentView h1{
+    font-size: 5vh;
+}
+
+#ContentView img{
+    width: 45vw;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#ContentView div{
+    margin-top: 3vh;
+    width: 24vw;
+    font-size: 3vh;
+}
+
+#ContentView td, #HeaderText{
+    padding: 2vw;
+}
+
+#ContentView a{
+    color: yellow;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    #HeaderContainer img{
+        width: 8vw;
+        margin: 0vw;
+    }
+
+    #ContentView td{
+        display: block;
+    }
+
+    #ContentView img, #ContentView div{
+        width: 90vw;
+    }
+}

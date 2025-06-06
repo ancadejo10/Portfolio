@@ -1,0 +1,156 @@
+#HeaderContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20,20,20);
+    margin: 2%;
+    border-radius: 10px;
+}
+
+#HeaderContainer img{
+    width: 15vw;
+    border-radius: 10px;
+    margin-right: 10vw;
+}
+
+#HeaderText h1{
+    font-family: "Playwrite IT Moderna", cursive;
+    font-size: 5vw;
+    text-shadow: 0 0px 50px rgb(255, 0, 0);
+    color: rgb(255, 66, 45);
+}
+
+#HeaderText p{
+    font-family: "Port Lligat Sans", sans-serif;
+    font-size: 2vw;
+}
+
+#ProjectsView{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ProjectsView td{
+    transform: scale(0.9);
+
+    box-shadow: inset 0 0px 50px rgb(0, 0, 0);
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+
+    box-shadow: 
+        inset 5px 5px 15px rgba(0, 0, 0, 0.8),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1);
+
+    transition: 0.2s;
+}
+
+#ProjectsView .Sub{
+    box-shadow: none;
+    background-color: rgb(19, 19, 19);
+    border-radius: 10px;
+    color: white;
+
+    transform: scale(0.9);
+    padding: 0px;
+    text-align: center;
+}
+
+#ProjectsView td:hover{
+    box-shadow: 0 0px 50px rgb(0, 0, 0);
+    background-color: rgb(89, 89, 89);
+
+    transform: scale(0.93);
+}
+
+#ProjectsView .Sub:hover{
+    cursor: default;
+    box-shadow: none;
+    transform: scale(0.9);
+}
+
+#ProjectsView h1{
+    font-size: 5vh;
+}
+
+#ProjectsView img{
+    width: 24vw;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#ProjectsView div{
+    margin-top: 3vh;
+    width: 24vw;
+    font-size: 3vh;
+}
+
+#ProjectsView td, #HeaderText{
+    padding: 2vw;
+}
+
+#ProjectsView a{
+    color: yellow;
+    text-decoration: none;
+}
+
+#LanguagesView{
+    padding: 2vh;
+    display: flex;
+
+    box-shadow: 
+        5px 5px 15px rgba(0, 0, 0, 0.9),
+        -5px -5px 15px rgba(255, 255, 255, 0.1);
+
+    border-radius: 10px;
+
+    transform: scale(0.8);
+
+    justify-content: center;
+    align-items: center;
+}
+
+#LanguagesView img{
+    height: 10vh;
+    margin: 4vh;
+    transition: 0.2s;
+}
+
+#LanguagesView img:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    #HeaderContainer{
+        display: block;
+    }
+
+    #HeaderContainer img{
+        position: relative;
+        left: 50%; transform: translate(-50%, 10%);
+        width: 40vw;
+        margin-right: 100px;
+    }
+
+    #HeaderText h1{
+        font-size: 10vw;
+        text-align: center;
+    }
+    
+    #HeaderText p{
+        font-size: 4vw;
+    }
+
+    #ProjectsView td{
+        display: block;
+    }
+
+    #ProjectsView img, #ProjectsView div{
+        width: 90vw;
+    }
+
+    #LanguagesView{
+        display: block;
+    }
+}

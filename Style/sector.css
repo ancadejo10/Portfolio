@@ -1,0 +1,17 @@
+body{
+    color: white;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff transparent;
+}
+
+hr{
+    width: 90vw;
+    display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}

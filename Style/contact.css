@@ -1,0 +1,62 @@
+#ContactView{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ContactView td{
+    transform: scale(0.9);
+
+    box-shadow: inset 0 0px 50px rgb(0, 0, 0);
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+
+    box-shadow: 
+        inset 5px 5px 15px rgba(0, 0, 0, 0.8),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1);
+
+    transition: 0.2s;
+
+}
+
+#ContactView td:hover{
+    box-shadow: 0 0px 50px rgb(0, 0, 0);
+    background-color: rgb(89, 89, 89);
+
+    transform: scale(0.93);
+}
+
+#ContactView h1{
+    font-size: 5vh;
+}
+
+#ContactView img{
+    width: 24vw;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+#ContactView div{
+    margin-top: 3vh;
+    width: 24vw;
+    font-size: 5vh;
+}
+
+#ContactView td, #HeaderText{
+    padding: 2vw;
+}
+
+#ContactView a{
+    color: yellow;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    #ContactView td{
+        display: block;
+    }
+
+    #ContactView img, #ContactView div{
+        width: 90vw;
+    }
+}
