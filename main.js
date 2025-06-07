@@ -39,14 +39,6 @@ window.addEventListener('message', (event) => {
   }
 });
 
-function OnResize(){
-    container.style.width = (window.visualViewport.width  - 0) + "px"
-    container.style.height = ((window.visualViewport.height - topbar.clientHeight) - 5) + "px"
-}
-
-window.addEventListener('resize', OnResize)
-document.addEventListener("DOMContentLoaded", OnResize)
-
 document.addEventListener('touchmove', preventScroll, { passive: false });
 
 function preventScroll(e) {
