@@ -1,6 +1,6 @@
 html, body{
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 body{
@@ -25,4 +25,8 @@ body{
 
 html {
   scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
 }
